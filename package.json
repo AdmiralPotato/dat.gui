@@ -6,13 +6,6 @@
   "directories": {
     "test": "tests"
   },
-  "browserify": {
-    "transform": [
-      ["babelify", { "presets": ["es2015"] }],
-      ["stringify", { "extensions": [".html"] }],
-      ["sassify"]
-    ]
-  },
   "scripts": {
     "dev": "webpack --progress --colors --watch --config webpack/webpack.config.js --devtool sourcemap",
     "build": "npm run build-js && npm run build-css",
@@ -41,15 +34,12 @@
     "eslint-plugin-import": "^1.15.0",
     "extend": "^3.0.0",
     "html-loader": "^0.4.4",
-    "node-sass": "^3.10.0",
-    "sass-loader": "^4.0.2",
+    "node-sass": "^4.5.3",
+    "sass-loader": "^6.0.6",
     "webpack": "1.14.x"
   },
   "dependencies": {
-    "babel-preset-es2015": "^6.14.0",
-    "babelify": "^7.3.0",
-    "sassify": "^2.0.0",
-    "stringify": "^5.1.0"
+    "babel-preset-es2015": "^6.14.0"
   },
   "eslintConfig": {
     "extends": "airbnb-base",
